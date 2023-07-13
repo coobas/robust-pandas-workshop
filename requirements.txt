@@ -1,0 +1,10 @@
+jupyter==1.0.0
+pandas==2.0.3
+httpx==0.24.1
+pydantic==1.10.10
+mypy==1.4.1
+pandera==0.15.2
+black==23.7.0
+frictionless==5.13.1
+pyyaml==6.0
+hypothesis==6.81.1
