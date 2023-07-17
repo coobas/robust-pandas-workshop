@@ -65,20 +65,6 @@ class HistoricalWeatherDataFrame(pa.DataFrameModel):
     model: Index[str]
 
 
-# Solution to exercise in Data loading module
-class CHMIDailyDataFrame(pa.DataFrameModel):
-    average_temperature: Series[float] = pa.Field(coerce=True)
-    maximum_temperature: Series[float] = pa.Field(coerce=True)
-    minimum_temperature: Series[float] = pa.Field(coerce=True)
-    wind_speed: Series[float] = pa.Field(coerce=True)
-    air_pressure: Series[float] = pa.Field(coerce=True)
-    humidity: Series[float] = pa.Field(coerce=True)
-    precipitation: Series[float] = pa.Field(coerce=True)
-    total_snow_depth: Series[float] = pa.Field(coerce=True)
-    sunshine: Series[float] = pa.Field(coerce=True)
-    date: Index[Annotated[pd.DatetimeTZDtype, "ns", "Europe/Prague"]]
-
-
 WEATHER_CODES = {
     # From https://open-meteo.com/en/docs
     0: "Clear sky",

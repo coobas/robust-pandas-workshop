@@ -96,11 +96,10 @@ CZ_EN_TRANSLATION = {
 
 DEFAULT_CHMI_DATA_PATH = pathlib.Path(__file__).parent.parent / "data" / "P1PRUZ01.xlsx"
 
-# Solution to exercise in Data loading module
 @pa.check_types
 def load_chmi_data(
     path: str | pathlib.Path = DEFAULT_CHMI_DATA_PATH,
-) -> DataFrame[pa_models.CHMIDailyDataFrame]:
+) -> pd.DateOffset:
     """Load historical weather data from ČHMÚ"""
     excel_data = pd.ExcelFile(path)
 
@@ -114,7 +113,7 @@ def load_chmi_data(
         .rename(columns=CZ_EN_TRANSLATION)
         .rename(columns=lambda c: c.replace(" ", "_"))
     )
-    return result.set_index(result.index.tz_localize("Europe/Prague"))
+    return result
 
 
 def extract_and_clean_chmi_excel_sheet(
