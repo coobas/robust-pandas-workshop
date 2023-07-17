@@ -76,7 +76,7 @@ class CHMIDailyDataFrame(pa.DataFrameModel):
     precipitation: Series[float] = pa.Field(coerce=True)
     total_snow_depth: Series[float] = pa.Field(coerce=True)
     sunshine: Series[float] = pa.Field(coerce=True)
-    date: Index[Annotated[pd.DatetimeTZDtype, "ns", "Europe/Prague"]]
+    date: Index[pd.Timestamp]
 
 
 WEATHER_CODES = {

@@ -114,7 +114,7 @@ def load_chmi_data(
         .rename(columns=CZ_EN_TRANSLATION)
         .rename(columns=lambda c: c.replace(" ", "_"))
     )
-    return result.set_index(result.index.tz_localize("Europe/Prague"))
+    return result
 
 
 def extract_and_clean_chmi_excel_sheet(
