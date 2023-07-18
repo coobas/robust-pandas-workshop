@@ -58,7 +58,7 @@ python -m pip install -r requirements.txt
 #### Conda installation
 
 ```bash
-conda env create -f environment.yml -n robust-pandas-workshop
+conda env create -f environment.yml -n "robust-pandas-workshop"
 conda activate robust-pandas-workshop
 ```
 
