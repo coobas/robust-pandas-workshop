@@ -85,6 +85,8 @@ pip install -e .
 
 [Clone in Deepnote](https://deepnote.com/launch?url=https%3A%2F%2Fgithub.com%2Fcoobas%2Frobust-pandas-workshop)
 
+Follow the instructions therein and if you do not have it, create a free Deepnote account.
+
 ## Workshop materials
 
 All materials that we will use during the workshop are in Jupyter notebooks.
