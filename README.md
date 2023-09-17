@@ -81,6 +81,10 @@ or, which is more robust, install the package in editable mode:
 pip install -e .
 ```
 
+## Online option
+
+[Clone in Deepnote](https://deepnote.com/launch?url=https%3A%2F%2Fgithub.com%2Fcoobas%2Frobust-pandas-workshop)
+
 ## Workshop materials
 
 All materials that we will use during the workshop are in Jupyter notebooks.
